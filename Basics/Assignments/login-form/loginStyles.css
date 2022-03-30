@@ -31,6 +31,7 @@ body {
   font-size: small;
   color: dimgrey;
 }
+
 .box {
   padding: 12px;
   width: 65%;
@@ -81,4 +82,18 @@ span {
 .side img {
   width: 400px;
   height: 600px;
+}
+
+h5 {
+  font-size: 0.7em;
+  color: dimgrey;
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+h5 span {
+  background: whitesmoke;
+  padding: 0 10px;
 }
