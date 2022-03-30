@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: lavender;
+}
+/* Container */
+.container {
+  display: flex;
+  height: 600px;
+  width: 800px;
+  margin: auto;
+  margin-top: 6.5em;
+}
+.form-allign {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.form-allign h2 {
+  font-size: 1.8rem;
+  margin: 1.8em 5.3em 0.3em 0.68em;
+}
+.form-allign .heading-style p {
+  margin-left: 1.2em;
+  font-size: small;
+  color: dimgrey;
+}
+.box {
+  padding: 12px;
+  width: 65%;
+  margin: 10px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 20px;
+}
+
+label {
+  margin-right: 13em;
+  padding-top: 0.2em;
+}
+
+.signup-btn {
+  padding: 12px;
+  width: 65%;
+  margin: 10px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.google-signup-btn {
+  padding: 12px;
+  width: 65%;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  border: rgb(136, 135, 135);
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+span {
+  margin: 0.2em 0.2em 1.3em -1.6em;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.side img {
+  width: 400px;
+  height: 600px;
+}

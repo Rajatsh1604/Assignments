@@ -1,0 +1,21 @@
+how to create js object
+-- 1 using constructor
+const obj_1 = new Object();
+
+--2 using literals
+const obj_2= {};
+
+--3 using Create
+const c = Object.create({})
+
+>> HOW TO REMOVE PROTOTYPE FROM OBJECT ?
+-- Create Object like  const obj_1 = new Object(null); so it willl remove all prototype
+(refer nullPrototype.png)
+
+>>WHY OBJECT IS FASTER THAN ARRAY?
+-- In Object we can simply search by key. Incase of Array we need to Iterate through all values inside array.
+
+>> IMPORTANT METHODS
+
+>> FOR IN LOOP -- Used to loop Object in JavaScript. It will retuen all key and value in 
+from that Object.
