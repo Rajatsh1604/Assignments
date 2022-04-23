@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png"
+    />
+    <title>Zomato Clone</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <script src="./assets/js/script.js"></script>
+
+    <section class="main-container">
+      <section class="primary-container">
+        <div class="logo">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+            alt="logo"
+            class="header-logo"
+          />
+        </div>
+        <div class="header-active-area">
+          <div class="location-search-box">
+            <div class="location-area">
+              <div class="location-png">
+                <img
+                  src="./assets/images/icons8-location-40.png"
+                  alt="location-png"
+                  class="location-icon-png"
+                />
+              </div>
+              <div class="location-list" style="color: gray">Indore</div>
+              <div class="location-arrow-png">
+                <img
+                  src="./assets/images/icons8-sort-down-50.png"
+                  alt="location-list"
+                  class="location-list-icon-png"
+                />
+              </div>
+            </div>
+
+            <div class="location-seperater"></div>
+
+            <div class="search-area">
+              <div class="search-icon">
+                <img
+                  src="./assets/images/icons8-search-50.png"
+                  alt="search-icon-png"
+                  class="search-icon-png"
+                />
+              </div>
+              <div class="search-input-text" style="color: gray">
+                Search for Restaurant, Cusine and Dish
+              </div>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="login-container">
+              <a class="login-popup">Log in</a>
+            </div>
+            <div class="signin-container">
+              <a class="signin-popup">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-breadcrums">
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">India</a></li>
+          <li>Indore Restaurant</li>
+        </ul>
+      </section>
+
+      <section class="tab-section">
+        <!-- Tab links -->
+        <div class="tab-width">
+        <div class="tab">
+          <div class="tab-icon">
+            <div class="img-tab">
+              <img
+                src="./assets/images/delivery-icon.png"
+                alt="delivery-icon-png"
+                class="delivery-icon-png"
+              />
+            </div>
+            <button class="tablinks" onclick="openTab(event, 'Delivery')">
+              Delivery
+            </button>
+          </div>
+
+          <div class="tab-icon">
+            <div class="img-tab">
+              <img
+                src="./assets/images/dining-out-icon.png"
+                alt="dining-out-icon-png"
+                class="dining-out-icon-png"
+              />
+            </div>
+            <button class="tablinks" onclick="openTab(event, 'Dining-out')">
+              Dining out
+            </button>
+          </div>
+
+          <div class="tab-icon">
+            <div class="img-tab">
+              <img
+                src="./assets/images/nightlife-icon.png"
+                alt="nightlife-icon-png"
+                class="nightlife-icon-png"
+              />
+            </div>
+            <button class="tablinks" onclick="openTab(event, 'Nightlife')">
+              Nightlife
+            </button>
+          </div>
+        </div>
+      </div>
+
+        <!-- Tab content -->
+        <div id="Delivery" class="tabcontent">
+          <!-- <p>Page is Under construction</p> -->
+        </div>
+
+        <div id="Dining-out" class="tabcontent" style="display: block">
+          <div class="dining-out-section">
+            <h2>Collections</h2>
+            <div class="dining-out-section-detail">
+              <p>
+                Explore curated lists of top restaurants, cafes, pubs, and bars
+                in Indore, based on trends
+              </p>
+              <a class="dining-out-link">All collections in Indore</a>
+            </div>
+          </div>
+          <!-- Collections slider start -->
+
+          <div class="collection-main-conatiner">
+            <!-- collection card 1 -->
+
+            <div class="collection-container">
+              <div class="collection-container-img"> 
+                <img
+                src="./assets/images/collection-img-1.jpg"
+                alt="collection-place-img"
+                class="collection-place-img"
+               /> 
+             </div>
+
+            <div class="collection-container-name">Live Cricket Score</div>
+
+            <div class="collection-container-subname"> 
+                <div class="collection-container-subname-child">32 Places</div> 
+                <div class="collection-container-sortright">
+                  <img
+                  src="./assets/images/icons8-sort-right-26.png"
+                  alt="collection-sort-img"
+                  class="collection-sort-img"
+                  />  
+                </div>
+            </div>
+            </div>
+<!-- collection card 2 -->
+            <div class="collection-container">
+              <div class="collection-container-img"> 
+                <img
+                src="./assets/images/collection-img-2.jpg"
+                alt="collection-place-img"
+                class="collection-place-img"
+               /> 
+             </div>
+
+            <div class="collection-container-name">Best of Indore</div>
+
+            <div class="collection-container-subname"> 
+                <div class="collection-container-subname-child">20 Places</div> 
+                <div class="collection-container-sortright">
+                  <img
+                  src="./assets/images/icons8-sort-right-26.png"
+                  alt="collection-sort-img"
+                  class="collection-sort-img"
+                  />  
+                </div>
+            </div>
+            </div>
+            <!-- collection card 3 -->
+            <div class="collection-container">
+              <div class="collection-container-img"> 
+                <img
+                src="./assets/images/collection-img-8.jpg"
+                alt="collection-place-img"
+                class="collection-place-img"
+               /> 
+             </div>
+
+            <div class="collection-container-name">Trending this week</div>
+
+            <div class="collection-container-subname"> 
+                <div class="collection-container-subname-child">30 Places</div> 
+                <div class="collection-container-sortright">
+                  <img
+                  src="./assets/images/icons8-sort-right-26.png"
+                  alt="collection-sort-img"
+                  class="collection-sort-img"
+                  />  
+                </div>
+            </div>
+            </div>
+ <!-- collection card 3 -->
+            <div class="collection-container">
+              <div class="collection-container-img"> 
+                <img
+                src="./assets/images/collection-img-4.jpg"
+                alt="collection-place-img"
+                class="collection-place-img"
+               /> 
+             </div>
+
+            <div class="collection-container-name">Best Pizza in Town</div>
+
+            <div class="collection-container-subname"> 
+                <div class="collection-container-subname-child">12 Places</div> 
+                <div class="collection-container-sortright">
+                  <img
+                  src="./assets/images/icons8-sort-right-26.png"
+                  alt="collection-sort-img"
+                  class="collection-sort-img"
+                  />  
+                </div>
+            </div>
+            </div>
+
+
+          </div>
+          <!-- Collections slider end -->
+
+        <div id="Nightlife" class="tabcontent">
+          <!-- <p>Page is under construction</p> -->
+        </div>
+      </section>
+
+      <section class="second-tab">
+        <div class="tab-main-width">
+
+        <div class="tab-main">
+
+          <div class="tab-primary">
+            <img
+                  src="./assets/images/icons8-slider-16.png"
+                  alt="slider-img"
+                  class="slider-second-tab-png"
+                  />
+           <a class="inside-tab-primary">Filters</a>
+          </div>
+
+          <div class="tab-primary">
+            <a class="inside-tab-primary">Rating: 4.0+</a>
+          </div>
+
+          <div class="tab-primary">
+            <a class="inside-tab-primary">Pro offer</a>
+            <img
+            src="./assets/images/icons8-down-24.png"
+            alt="slider-img"
+            class="down-second-tab-png"
+            />
+          </div>
+
+          <div class="tab-primary">
+            <a class="inside-tab-primary">Outdoor Seating</a>
+          </div>
+
+          <div class="tab-primary">
+            <a class="inside-tab-primary">Serves Alcohol</a>
+          </div>
+
+          <div class="tab-primary">
+            <a class="inside-tab-primary">Open Now</a>
+          </div>
+
+        </div>
+      </div>
+
+      </section>
+      <section class="heading-dineout">
+        <div class="heading-dineout-option">
+          <h1> Dine-Out Restaurants in Indore </h1>
+        </div>
+      </section>
+
+      <section class="dineout-restaurants-menu">
+        <div class="dineout-grid-view">
+        <!-- card 1 -->
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-1.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">4.3 km
+              
+            </div>
+          </div>
+
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">Indore Sarafa</div>
+            <div class="restaurant-rating">4.5
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">Cafe, Fast Food, Beverages, Chinese, Italian</div>
+            <div class="restaurant-price">₹500 for two</div>
+          </div>
+
+          <div class="restaurant-address">Vijay nagar, Indore</div>
+        </div>
+
+        <!-- card 2 -->
+
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-2.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">4.3 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">Ring Road Social</div>
+            <div class="restaurant-rating">3.5
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">North Indian, Chinese, Biryani, Pizza, Salad, Kebab, Desserts, Beverages</div>
+            <div class="restaurant-price">₹400 for two</div>
+          </div>
+
+          <div class="restaurant-address">Old Palasia, Indore</div>
+        </div>
+
+        <!-- card 3 -->
+
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-3.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">4.3 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">Adam's Ale</div>
+            <div class="restaurant-rating">4.8
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">Continental, North Indian, Chinese</div>
+            <div class="restaurant-price">₹1500 for two</div>
+          </div>
+
+          <div class="restaurant-address">MR10, Indore</div>
+        </div>
+        <!-- card 4 -->
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-4.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">4.3 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">Jay Maa Kali Bengali Restaurant</div>
+            <div class="restaurant-rating">4.0
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">Chinese, Biryani, North Indian</div>
+            <div class="restaurant-price">₹800 for two</div>
+          </div>
+
+          <div class="restaurant-address">Vijay nagar, Indore</div>
+        </div>
+        <!-- card 5 -->
+
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-5.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">4.9 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">The Piano Project</div>
+            <div class="restaurant-rating">4.1
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">North Indian, Mughlai, Kebab, Biryani, Beverages</div>
+            <div class="restaurant-price">₹700 for two</div>
+          </div>
+
+          <div class="restaurant-address">MR 10 Road, Indore</div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-6.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">4.3 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">The Monroe</div>
+            <div class="restaurant-rating">4.7
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">North Indian, Chinese, Italian</div>
+            <div class="restaurant-price">₹800 for two</div>
+          </div>
+
+          <div class="restaurant-address">Bhawarkua square, Indore</div>
+        </div>
+
+
+        <!-- card 7 -->
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-7.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">4.2 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">Indore Kitchen - Indore Marriott Hotel</div>
+            <div class="restaurant-rating">4.4
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">North Indian, Asian</div>
+            <div class="restaurant-price">₹800 for two</div>
+          </div>
+
+          <div class="restaurant-address">Indore Marriott Hotel, Vijay Nagar, Indore</div>
+        </div>
+
+
+        <!-- card 8 -->
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-8.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">1.3 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">Revolution Indore</div>
+            <div class="restaurant-rating">4.9
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">North Indian, Continental, Fast Food</div>
+            <div class="restaurant-price">₹2000 for two</div>
+          </div>
+
+          <div class="restaurant-address">Vijay Nagar, Indore</div>
+        </div>
+
+        <!-- card 9 -->
+        <div class="restaurant-card">
+
+          <div class="restaurant-card-img">
+            <img
+            src="./assets/images/hotel-dine-9.jpg"
+            alt="hotel-img"
+            class="dineout-restaurants"
+            />
+            <div class="restaurant-distance">5.9 km</div>
+          </div>
+          
+          <div class="restaurant-name-rating">
+            <div class="restaurant-name">Kesar Shree Restaurant</div>
+            <div class="restaurant-rating">3.7
+              <img
+              src="./assets/images/icons8-star-48.png"
+              alt="rating-img"
+              class="star-rating-png"
+              />
+            </div>
+          </div>
+
+          <div class="restaurant-category-price">
+            <div class="restaurant-category">Street Food</div>
+            <div class="restaurant-price">₹100 for two</div>
+          </div>
+
+          <div class="restaurant-address">Bhawarkua square, Indore</div>
+        </div>
+
+
+
+      </div>
+
+      </section>
+      
+    </section>
+    <section class="other-option">
+      <div class="main-other-option-container">
+
+      <div class="first-other-option">
+        <p>Explore other options for you here</p>
+      </div>
+
+      <div class="second-other-option">
+        <p>Popular cuisines near me</p>
+        <div>
+          <a href="#" target="_blank" rel="noopener noreferrer">Bakery food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Beverages food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Biryani food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Burger food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Chinese food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Coffee food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Desserts food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Ice Cream food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Italian food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Mithai food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Momos food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Mughlai food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">North Indian food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Rolls food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Sandwich food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Shake food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">South Indian food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Street food near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Tea food near me</a>
+        </div>
+      </div>
+
+      <div class="second-other-option">
+        <p>Popular restaurant types near me</p>
+        <div>
+          <a href="#" target="_blank" rel="noopener noreferrer">Bakeries near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Bars near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Beverage Shops near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Bhojanalya near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Cafés near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Casual Dining near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Clubs near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Confectioneries near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Dessert Parlors near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Dhabas near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Fine Dining near me</a>
+          <span class="add-dot"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer">Food Courts near me</a>
+    
+        </div>
+      </div>
+
+      <div class="second-other-option">
+        <p>Top Restaurant Chains</p>
+        <div class="inner-second-other-option">
+          <a href="#" target="_blank" rel="noopener noreferrer">Domino's</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">KFC</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">McDonald's</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Pizza Hut</a>
+    
+        </div>
+      </div>
+
+      <div class="second-other-option">
+        <p>Cities We Deliver To</p>
+        <div class="cities-second-other-option">
+          <a href="#" target="_blank" rel="noopener noreferrer">Kanpur's</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Delhi</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Amritsar</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Chandiragh</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Pune</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Mumbai</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Satara</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Nashik</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Shirdi</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Dhamnod</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Maheshwar</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Varanasi</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Ranchi</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Hyderabad</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Chennai</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Ludhiana</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Guwahati</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Ooty</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Shimla</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Pushkar</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Kanpur's</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">KFC</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Lucknow</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Goa</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Kochi</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Ahmedabad</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Jaipur</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Dharamshala</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: black;">see more</a>
+          
+        </div>
+      </div>
+      
+    </div>
+    </section>
+    <footer class="footer-main">
+
+      <div class="footer-primary">
+        
+        <div class="footer-logo-line">
+
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+            alt="footer-logo"
+            class="footer-logo"
+          />
+
+          <div class="footer-line-right">
+
+            <div class="footer-right-one">
+                <img
+                  src="./assets/images/icons8-india-48.png"
+                  alt="icons8-india-logo"
+                  class="icons8-india-logo"
+                />
+                
+                <span>India</span>
+
+                <img    
+                  src="./assets/images/icons8-chevron-down-24.png"
+                  alt="chevron-down"
+                  class="chevron-down-icon"
+                />
+            </div>
+
+            <div class="footer-right-one">
+              <img
+                src="./assets/images/icons8-internet-99.png"
+                alt="icons8-internet-logo"
+                class="icons8-internet-logo"
+              />
+              
+              <span>English</span>
+
+              <img    
+                src="./assets/images/icons8-chevron-down-24.png"
+                alt="chevron-down"
+                class="chevron-down-icon"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-flex-menu">
+          <div class="footer-flex">
+            <h1>About Zomato</h1>
+            <div class="footer-flex-inner">
+              <a>Who We Are</a>
+              <a>Blog</a>
+              <a>Work With US</a>
+              <a>Investor Relations</a>
+              <a>Report Fraud</a>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <h1>ZOMAVERSE</h1>
+            <div class="footer-flex-inner">
+              <a>Zomato</a>
+              <a>Feeding India</a>
+              <a>Hyperpure</a>
+              <a>Zomaland</a>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <h1>FOR RESTAURANTS</h1>
+            <div class="footer-flex-inner">
+              <a>Parter With US</a>
+              <a>Apps For You</a>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <h1>LEARN MORE</h1>
+            <div class="footer-flex-inner">
+              <a>Privacy</a>
+              <a>Security</a>
+              <a>Terms</a>
+              <a>Sitemap</a>
+            </div>
+          </div>
+          <div class="footer-flex">
+            <h1>SOCIAL LINKS</h1>
+            <div class="footer-flex-inner">
+
+              <div class="footer-social-icon">
+                <img    
+                src="./assets/images/icons8-twitter-24.png"
+                alt="twitter-icon"
+                class="twitter-icon"
+              />
+              <img    
+                src="./assets/images/icons8-youtube-24.png"
+                alt="youtube-icon"
+                class="youtube-icon"
+              />
+              <img    
+                src="./assets/images/icons8-instagram-24.png"
+                alt="instagram-icon"
+                class="instagram-icon"
+              />
+              <img    
+                src="./assets/images/icons8-linkedin-circled-30.png"
+                alt="linkedin"
+                class="linkedin"
+              />
+              <img    
+                src="./assets/images/icons8-facebook-30.png"
+                alt="facebook-icon"
+                class="facebook-icon"
+              />
+              </div>
+
+              <img    
+                src="./assets/images/23e930757c3df49840c482a8638bf5c31556001144.png"
+                alt="gplay-icon"
+                class="gplay-icon"
+              />
+
+              <img    
+                src="./assets/images/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                alt="apple-icon"
+                class="apple-icon"
+              />
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="hr-footer">
+
+        <p class="para-footer"> By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2022 © Zomato™ Ltd. All rights reserved.</p>
+
+
+      </div>
+    </footer>
+  </body>
+</html>

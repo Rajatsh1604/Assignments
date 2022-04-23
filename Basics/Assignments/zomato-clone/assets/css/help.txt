@@ -1,0 +1,4 @@
+  css used to reduce long text , it will add ...  
+  { white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }

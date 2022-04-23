@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart-UI</title>
+    <link rel="stylesheet" href="./assets/css/cart_checkout.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="section-one">
+    <div class="container">
+      <div class="main-heading">
+        <h3>Shopping Cart</h3>
+        <div class="progress-span">
+          <a>Homepage /</a> <a>Clothing Categories /</a>
+          <a>My Shopping Cart</a>
+        </div>
+      </div>
+      <div class="login-check">
+        <button class="change-button">CHANGE</button>
+        <span>
+          <p class="a">a LOGIN</p>
+          <p class="b">Michael Smith <span>+806 - 445 - 7763</span></p>
+        </span>
+      </div>
+      <div class="address-check">
+        <button class="change-button">CHANGE</button>
+        <span>
+          <p class="a">b SHIPPING ADDRESS</p>
+          <p class="b">Brandy Cooper, New Civil Colony</br> Salt Lake City, US </p>
+        </span>
+      </div>
+      <div class="paymemt-methods">
+        <span>
+          <p class="a">b PAYMENT METHODS</p>
+        </span>
+        <div class="payment-methods-inner">
+        <div class="payment-method-debit">
+          <div class="radio-left">
+            <input type="radio" class="radio-default-style" name="payment-method-radio" id="paymentCard"/>
+          </div>
+          <div class="middle-payment-logo">
+            <img src="./assets/images/icons8-bank-cards-60.png" alt="card/debit" />
+        </div>
+          <div class="radio-right">
+            <label for="paymentCard">Debit / Credit Card</label>
+          </div>
+        </div>
+        <div class="show-debit-fields">
+          <label for="debitCardNumber">Enter Card Number *</label>
+          <input type="number" class="dbtCardNumber" id="debitCardNumber" required/>
+          
+        <span class="debit-flex">
+            <div class="common-flex">
+           <label for="lastyear">Valid Date *</label>
+          <input type="month" id="lastyear" name="validDate" placeholder="YYYY:MM"> 
+          </div>
+
+        <div class="common-flex">
+          <label for="cvvNumber">CVV *</label>
+          <input type="number" id="cvvNumber" name="cvv"> 
+        </div>
+
+        <div class="common-flex">
+          <label for="totalPayment"></label>
+          <input type="button" id="totalPayment"value="Pay $117.00">
+        </div>  
+        </span>
+        <div class="para-paymentNote">
+          <p>Your card details would be securely saved for Faster transaction. Your CVV would not be stored.</p>
+        </div>
+        </div>
+        <div class="payment-method-netbanking">
+          <div class="radio-left">
+            <input type="radio" class="radio-default-style" name="payment-method-radio" id="paymentNetBanking"/>
+          </div>
+          <div class="middle-payment-logo">
+            <img src="./assets/images/icons8-internet-folder-50.png" alt="netbanking" />
+        </div>
+          <div class="radio-right">
+            <label for="paymentNetBanking">Net Banking</label>
+          </div>
+      </div>
+      <div class="payment-method-wallet">
+        <div class="radio-left">
+          <input type="radio" class="radio-default-style" name="payment-method-radio" id="paymentWallet"/>
+        </div>
+        <div class="middle-payment-logo">
+          <img src="./assets/images/icons8-wallet-60.png" alt="wallet" />
+      </div>
+        <div class="radio-right">
+          <label for="paymentWallet">Google / Apple Wallet</label>
+        </div>
+      </div>
+     
+    </div>
+      </div>
+    </div>
+  
+    <div class="side">
+      <div class="order-heading"><h6>Your order</h6></div>
+
+      <div class="imaginary-line"></div>
+
+      <div class="cart-items">
+
+        <div class="cart-items-details">
+          <img src="./assets/images/icons8-clothes-85 (1).png" alt="orderitem" class="order-item-img" >
+
+          <div class="items-description">
+            <h5>Winter Jacket</h5>
+            <div class="items-details-description">
+              <h6>Size XL</h6>
+              <h6>Color Blue </h6>
+            </div>
+            <div class="items-details-description">
+              <h6>$36.00</h6>
+              <h6>* 2</h6>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      var number = 4;
+
+      if (number % 2 === 0){
+        console.log("number is even");
+      }else{
+        console.log("number is odd");
+      }
+
+    </script>
+  
+  </body>
+</html>

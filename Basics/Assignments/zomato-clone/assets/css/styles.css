@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  font-size: 22px;
+}
+
+:root {
+  --header-item-box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+  --location-search-box-border: 1px solid rgb(232, 232, 232);
+  --gray-seperater: #cfcfcf;
+  --hover-color: rgb(239, 79, 95);
+  --background-color: rgb(248, 248, 248);
+  --border-tab: rgb(207, 207, 207);
+  --tab-text-color: rgb(156, 156, 156);
+  --tab-background-color: rgb(255, 255, 255);
+  --heading-h1-color: rgb(28, 28, 28);
+}
+
+.main-container {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.primary-container {
+  display: flex;
+  align-items: center;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.header-logo {
+  width: 10rem;
+  /* height: 1.6rem;
+  max-width: 140px; */
+  margin-right: 24px;
+  cursor: pointer;
+}
+.header-active-area {
+  display: flex;
+  /* gap: 60px; */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.location-search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 54rem;
+  height: 4.4rem;
+  padding: 0px 6px;
+  background: rgb(255, 255, 255);
+  font-size: 21px;
+  border-radius: 0.8rem;
+  box-shadow: var(--header-item-box-shadow);
+  border: 1px solid var(--location-search-box-border);
+}
+.location-area {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 11.5rem;
+}
+.location-area .location-arrow-png {
+  margin-left: 70px;
+}
+img.location-icon-png {
+  width: 20px;
+  height: 20px;
+}
+img.location-list-icon-png {
+  height: 12px;
+  width: 12px;
+}
+
+.location-seperater {
+  height: 20px;
+  border: 1px solid var(--gray-seperater);
+}
+.search-area {
+  display: flex;
+  gap: 12px;
+  width: 32rem;
+}
+img.search-icon-png {
+  width: 20px;
+  height: 20px;
+}
+.right-container {
+  display: flex;
+  gap: 45px;
+}
+a.login-popup {
+  cursor: pointer;
+}
+
+a.signin-popup {
+  cursor: pointer;
+}
+
+/* Breadcrum Styles start */
+/* Style the list */
+section.section-breadcrums {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+ul.breadcrumb {
+  list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  color: gray;
+  display: inline;
+  font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--hover-color);
+}
+/* Breadcrum Styles end */
+
+/* Tab section style started */
+.tab-width {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+}
+.tab {
+  display: flex;
+  overflow: hidden;
+  width: 1400px;
+  height: 6.6rem;
+  margin: 0 auto;
+  align-items: center;
+  gap: 50px;
+}
+.tab-icon {
+  display: flex;
+  /* padding-bottom: 15px; */
+}
+.img-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  /* margin-right: 0.9rem; */
+  border-radius: 50%;
+  background: rgb(248, 248, 248);
+}
+
+img.delivery-icon-png {
+  width: 2rem;
+  height: 2rem;
+}
+img.dining-out-icon-png {
+  width: 2rem;
+  height: 2rem;
+}
+img.nightlife-icon-png {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Style the buttons that are used to open the tab content */
+section.tab-section {
+  padding-top: 15px;
+}
+
+.tab button {
+  background-color: inherit;
+  font-weight: 500;
+  font-size: 1.8rem;
+  border: none;
+  /* outline: none; */
+  cursor: pointer;
+  padding: 0px 12px;
+  /* transition: 0.3s; */
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  /* font-weight: 500;
+  font-size: 1.5rem; */
+  color: var(--hover-color);
+  border-bottom: 1px solid var(--hover-color);
+  border-bottom-width: 2px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin-top: 15px;
+  background-color: var(--background-color);
+}
+/* Tab section style ended */
+
+/* tab card section start */
+.dining-out-section {
+  display: block;
+  width: 1400px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+}
+.dining-out-section-detail {
+  padding: 32px 0 15px;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  justify-content: space-between;
+}
+a.dining-out-link {
+  font-size: 22px;
+  color: var(--hover-color);
+  cursor: pointer;
+}
+
+/* collection Slider styles */
+.collection-main-conatiner {
+  display: flex;
+  gap: 12px;
+  width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.collection-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+img.collection-place-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}
+.collection-container-name {
+  position: absolute;
+  /* background-color: white; */
+  bottom: 38px;
+  left: 12px;
+  color: white;
+  font-size: 24px;
+}
+.collection-container-subname {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  /* background-color: white; */
+  bottom: 2px;
+  left: 12px;
+  color: white;
+  font-size: 24px;
+}
+img.collection-sort-img {
+  width: 18px;
+}
+.collection-container-sortright {
+  /* line-height: 0; */
+  padding: 5px 2px 0px 3px;
+}
+.dining-out-section h2 {
+  font-size: 38px;
+  padding-top: 20px;
+}
+
+/* second Tab section started  */
+
+section.second-tab {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 3;
+  background-color: white;
+}
+.tab-main-width {
+  display: flex;
+  gap: 12px;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 32px 0;
+  background-color: white;
+}
+.tab-main {
+  display: flex;
+  gap: 12px;
+}
+.tab-primary {
+  display: flex;
+  gap: 6px;
+  padding: 0.6rem;
+  align-items: center;
+  color: var(--tab-text-color);
+  border: 1.6px solid var(--border-tab);
+  border-radius: 8px;
+  cursor: pointer;
+}
+a.inside-tab-primary {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.tab-primary:hover {
+  background-color: whitesmoke;
+}
+img.down-second-tab-png {
+  width: 1.2rem;
+}
+
+/* Heading Dine-out */
+
+section.heading-dineout {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.heading-dineout-option h1 {
+  color: var(--heading-h1-color);
+  font-size: 3rem;
+  margin: 1rem 0px 3.2rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* styles for restaurant card */
+
+section.dineout-restaurants-menu {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.dineout-grid-view {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  gap: 2px;
+  padding: 0.8rem;
+}
+.restaurant-card:hover {
+  border-radius: 1.5rem;
+  border: 0.1rem solid rgb(232, 232, 232);
+  background-color: white;
+}
+.restaurant-name-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* line-height: 1.2; */
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: rgb(28, 28, 28);
+}
+.restaurant-name {
+  max-width: 56%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.restaurant-category-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+img.dineout-restaurants {
+  width: 25rem;
+  height: 19rem;
+  border-radius: 1.2rem;
+}
+.restaurant-card-img {
+  position: relative;
+}
+
+.restaurant-distance {
+  margin: 0px;
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.4rem);
+  border-radius: 0.4rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  width: max-content;
+  padding: 0.2rem 0.5rem 0.3rem;
+}
+img.star-rating-png {
+  width: 0.8rem;
+}
+.restaurant-rating {
+  background-color: rgb(36, 150, 63);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 1.18rem;
+  padding: 0px 0.4rem;
+  border-radius: 8px;
+}
+.restaurant-category-price {
+  font-size: 1.2rem;
+  font-weight: 300;
+  white-space: nowrap;
+  color: rgb(105, 105, 105);
+}
+.restaurant-category {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 56%;
+}
+.restaurant-address {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgb(156, 156, 156);
+  max-width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+/* Section above the footer */
+section.other-option {
+  background: rgb(252, 252, 252);
+  margin-top: 2rem;
+}
+.main-other-option-container {
+  width: 1400px;
+  margin: 0 auto;
+}
+.first-other-option {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.first-other-option p {
+  color: rgb(54, 54, 54);
+  font-size: 3rem;
+  font-weight: 500;
+}
+.second-other-option {
+  padding: 1rem 0;
+}
+.second-other-option p {
+  color: rgb(54, 54, 54);
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.second-other-option a {
+  text-decoration: none;
+  color: rgb(130, 130, 130);
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-right: 1rem;
+}
+.second-other-option a:hover {
+  color: rgb(54, 54, 54);
+}
+.add-dot {
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.3rem;
+  background: rgb(130, 130, 130);
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-bottom: 0.35rem;
+}
+.inner-second-other-option {
+  display: flex;
+  max-width: 100%;
+  gap: 8rem;
+  /* justify-content: space-between; */
+}
+.cities-second-other-option {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+/* footer section started */
+
+.footer-main {
+  width: 100%;
+  background: rgb(248, 248, 248);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.footer-primary {
+  width: 1400px;
+  padding: 2.8rem 0px 2.2rem;
+}
+.footer-logo {
+  width: 10rem;
+  height: 2.3rem;
+  cursor: pointer;
+}
+.footer-logo-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-line-right {
+  display: flex;
+  gap: 1rem;
+}
+.footer-right-one {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid rgb(181, 181, 181);
+  border-radius: 0.6rem;
+}
+
+img.icons8-india-logo {
+  width: 2.3rem;
+}
+img.icons8-internet-logo {
+  width: 1.8rem;
+}
+.footer-flex-menu {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-flex-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.footer-flex-inner a {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  color: rgb(105, 105, 105);
+  cursor: pointer;
+}
+.footer-flex h1 {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer-social-icon img {
+  width: 2rem;
+}
+.footer-social-icon {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+img.gplay-icon {
+  width: 12rem;
+}
+.apple-icon {
+  width: 12rem;
+}
+hr.hr-footer {
+  margin-top: 3rem;
+  border-width: 1px 0px 0px;
+  border-top-color: rgb(207, 207, 207);
+}
+.para-footer {
+  font-size: 1.25rem;
+  font-weight: 100;
+  color: rgb(79, 79, 79);
+  margin-top: 1.3rem;
+}
